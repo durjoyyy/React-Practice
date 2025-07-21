@@ -5,14 +5,17 @@ import "./App.css";
 
 function App() {
   let currentCount = 5;
- const [count,setCount] =useState(0);
+  const [count, setCount] = useState(0);
 
   const addValue = () => {
-    setCount(count+1);
+    setCount((counter) => counter + 1);
+    // setCount(counter=>counter+1);
+    // setCount(counter=>counter+1);
+    // setCount(counter=>counter+1);
   };
 
   const substractValue = () => {
-    setCount(count-1);
+    setCount(count - 1);
   };
 
   return (
